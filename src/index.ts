@@ -8,6 +8,8 @@ const app = express();
 
 app.use(express.json());
 
+console.log("Origin", process.env.CLIENT_ENDPOINT);
+
 app.use(
   cors({
     origin: process.env.CLIENT_ENDPOINT,
